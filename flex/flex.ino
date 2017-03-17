@@ -1,5 +1,5 @@
 void printer(int no, int val)
-{
+{ 
   Serial.print("Value ");
   Serial.print(no);
   Serial.print(": ");
@@ -8,7 +8,7 @@ void printer(int no, int val)
 }
 
 const int MAX = 9;
-int flexPin[] = {A0, A1,A2,A3,A4,A5,A6,A7,A8,A9, A10, A11, A12, A14, A15};
+int flexPin[] = {A0, A1,A2,A3,A4,A6,A7,A8,A9, A10, A11, A12, A14, A15};
 int val[MAX];
 void setup()
 {
@@ -27,5 +27,5 @@ void loop()
     s += String(val[i])+" ";
   s += "$";
   Serial.println(s);
-  delay(3000);
+  delay(500);
 } 
